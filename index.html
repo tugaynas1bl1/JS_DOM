@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body id="body" class="w-full h-screen flex flex-col justify-center items-center relative">
+    <h1 class="hello text-3xl mb-5" id="title">Register Form</h1>
+    
+    <form class="flex flex-col gap-3" action="">
+        <input class="border border-zinc-300 p-3" placeholder="Enter your firstname" type="text" id="firstnameInput">
+        <input class="border border-zinc-300 p-3" placeholder="Enter your lastname"  type="text" id="lastnameInput">
+        <input class="border border-zinc-300 p-3" placeholder="Enter your email"  type="email" id="emailInput">
+        
+        
+        <div class="relative">
+            <input class="border border-zinc-300 p-3" placeholder="Enter your password"  type="password" id="passwordInput">
+            <button  id="icon" class="absolute right-2 top-3 cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#989090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-closed"><path d="m15 18-.722-3.25"/><path d="M2 8a10.645 10.645 0 0 0 20 0"/><path d="m20 15-1.726-2.05"/><path d="m4 15 1.726-2.05"/><path d="m9 18 .722-3.25"/></svg></button>
+        </div>
+       
+        <button  class = "bg-green-500 py-3" id="registerBtn">Register</button>
+
+    </form>
+    <button id="darkModeToggle" class="absolute top-4 right-4 bg-gray-300 px-3 py-2">Enable DarkMode</button>   
+</body>
+</html>
