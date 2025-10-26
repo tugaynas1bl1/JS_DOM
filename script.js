@@ -65,11 +65,12 @@ darkModeToggle.addEventListener("click", () => {
     h1.classList.toggle("text-white") 
     console.log("click")
     var arr = Array.from(document.getElementsByTagName("input"))
+    const isDarkModeActive = body.classList.contains("bg-black");
+    
     arr.forEach(element => {
-        element.classList.add("placeholder:text-white", "text-white")
+        if (isDarkModeActive) element.classList.add("placeholder:text-white", "text-white")
+        else element.classList.remove("placeholder:text-white", "text-white")
     });
 
-
-    const isDarkModeActive = body.classList.contains("bg-black");
     darkModeToggle.innerText = isDarkModeActive ? "Disable DarkMode" : "Enable DarkMode"
 })
